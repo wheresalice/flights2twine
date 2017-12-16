@@ -1,18 +1,15 @@
 require 'csv'
-require 'httparty'
-require 'json'
+
+AIRPORT_DATA = CSV.read(File.join(File.dirname(__FILE__), '..','data','airports.dat'))
 
 def code2airport(code)
-  api = JSON.parse(HTTParty.get('https://iatacodes.org/api/v6/airports?api_key=08767a13-81fa-400b-a1ce-f78855b55f03&code='+code).body)
-  (api && api['response'] && api['response'][0] && api['response'][0]['name']) || code
+  AIRPORT_DATA.find{|airport| airport[4] == code}
 end
 
 def generate(input_file)
 
   flights = CSV.read(input_file, {:headers => true})
   airports = flights.map{|flight| [flight['From'], flight['To']]}.flatten.uniq
-  airport_codes = {}
-  airports.each {|airport| airport_codes[airport] = code2airport(airport)}
 
   routes = flights.map{|flight| {'From' => flight['From'], 'To' => flight['To'], 'Distance' => flight['Distance']}}.uniq
 
@@ -23,10 +20,10 @@ def generate(input_file)
   EOF
 
   airports.each_with_index do |airport, index|
-    destinations = routes.select{|route| route['From'] == airport}.map{|route| "<li>(link: \"#{airport_codes[route['To']]} (#{route['To']})\")[(set: $visited to $visited + 1)(set: $distance to $distance + #{route['Distance']})(goto: '#{route['To']}')]"}.join("\n")
+    destinations = routes.select{|route| route['From'] == airport}.map{|route| "<li>(link: \"#{code2airport(route['To'])[1]}, #{code2airport(route['To'])[2]} #{code2airport(route['To'])[3]} (#{route['To']})\")[(set: $visited to $visited + 1)(set: $distance to $distance + #{route['Distance']})(goto: '#{route['To']}')]"}.join("\n")
     html << <<-EOF
 <tw-passagedata pid="#{index+1}" name="#{airport}" tags="" position="#{index*50}, #{index*50}">
-Flights from #{airport_codes[airport]} (#{airport})
+Flights from #{code2airport(airport)[1]}, #{code2airport(airport)[2]} #{code2airport(airport)[3]} (#{airport})
 <ul>
 #{destinations}
 </ul>

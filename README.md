@@ -8,10 +8,9 @@ There is an example story which uses Alice's flight data.
 
 Here is what you should be aware of:
 
-* The airport names come from http://iatacodes.org/ which are not the names you would normally use
 * The IFID should be changed if you plan on publishing your story
 * If there are no flights out of an airport your readers will get stuck there (unless they use the back button)
 
 There are a number of things which we would like to improve:
 
-* Find a better source of airport codes to give better names and country flags
+* Clean up the output and add country flags
