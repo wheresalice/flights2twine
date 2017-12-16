@@ -11,7 +11,7 @@ class App < Sinatra::Base
     @filename = params[:file][:filename]
     file = params[:file][:tempfile]
     html = generate(file)
-    output_file = Tempfile.new(['openflights', '.csv'])
+    output_file = Tempfile.new(['openflights', '.html'])
     output_file.write(html)
     output_file_name = output_file.path
     output_file.close
