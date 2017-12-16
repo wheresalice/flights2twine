@@ -13,327 +13,414 @@
 
 <tw-storydata name="Open Flights" startnode="1" creator="Twine" creator-version="2.2.0" ifid="DC223103-5C2D-4D5B-9A3C-2CF548DBB8FF" zoom="1" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
+.small {
+  font-size: 10px;
+  font-style: italic;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+tw-story {	
+  /* The following changes the text */
+  color: #3D9970; /* Set text to green or other color */
+  text-shadow: 1px 1px #2ECC40; /* Green text shadow */
+  font-size: 20px;
+  font-family: "Press Start 2P","Helvetica","Arial",sans-serif;
+  background: #7FDBFF; /* For old browsers */    
+  background: -webkit-linear-gradient(#7FDBFF, #0074D9);
+  background: -o-linear-gradient(#7FDBFF, #0074D9);
+  background: -moz-linear-gradient(#7FDBFF, #0074D9);
+  background: linear-gradient(#7FDBFF, #0074D9);
+}
+
+tw-passage {
+  /* The following changes the text box */
+  border: 5px groove #AAAAAA; /* Gray border around the box */
+  border-radius: 25px; /* Rounded corners on the box */
+  background: rgba(255,255,255,0.7); /* 30% transparent box */
+  padding: 25px;
+}
+
+tw-link {
+  color:#001f3f; /* Set the link color to darkblue */
+  transition: color .5s ease-in-out;
+}
+
+tw-link:hover { /* Mouse over a link & it turns orange */
+  color: #FF851B;
+}
+
+img { /* Images won't get wider than tw-passage container */
+  max-width: 100%;
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 </script><tw-passagedata pid="1" name="HKG" tags="" position="0,0" size="100,100">
-Flights from Chek Lap Kok International Airport, Hong Kong Hong Kong (HKG)
+Flights from Chek Lap Kok International Airport
+&lt;span class=&#39;small&#39;&gt;Hong Kong, Hong Kong (HKG)&lt;/span&gt;
 
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5973)(goto: &#39;MAN&#39;)]
-(link: &quot;Ngurah Rai (Bali) International Airport, Denpasar Indonesia (DPS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2146)(goto: &#39;DPS&#39;)]
-(link: &quot;Beijing Capital International Airport, Beijing China (PEK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1237)(goto: &#39;PEK&#39;)]
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5980)(goto: &#39;LHR&#39;)]
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5973)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Ngurah Rai (Bali) International Airport (DPS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2146)(goto: &#39;DPS&#39;)] &lt;span class=&#39;small&#39;&gt;Denpasar, Indonesia&lt;/span&gt;
+(link: &quot;Beijing Capital International Airport (PEK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1237)(goto: &#39;PEK&#39;)] &lt;span class=&#39;small&#39;&gt;Beijing, China&lt;/span&gt;
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5980)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="2" name="MAN" tags="" position="50,50" size="100,100">
- Flights from Manchester Airport, Manchester United Kingdom (MAN)
+Flights from Manchester Airport
+&lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom (MAN)&lt;/span&gt;
 
-(link: &quot;Chek Lap Kok International Airport, Hong Kong Hong Kong (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5973)(goto: &#39;HKG&#39;)]
-(link: &quot;Charles de Gaulle International Airport, Paris France (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 365)(goto: &#39;CDG&#39;)]
-(link: &quot;Atatürk International Airport, Istanbul Turkey (IST)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1671)(goto: &#39;IST&#39;)]
-(link: &quot;Malta International Airport, Malta Malta (MLA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1454)(goto: &#39;MLA&#39;)]
-(link: &quot;Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 302)(goto: &#39;AMS&#39;)]
-(link: &quot;Frankfurt am Main International Airport, Frankfurt Germany (FRA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 516)(goto: &#39;FRA&#39;)]
-(link: &quot;Orlando International Airport, Orlando United States (MCO)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4225)(goto: &#39;MCO&#39;)]
-(link: &quot;Chicago O&#39;Hare International Airport, Chicago United States (ORD)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3813)(goto: &#39;ORD&#39;)]
-(link: &quot;Gibraltar Airport, Gibraltar Gibraltar (GIB)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1197)(goto: &#39;GIB&#39;)]
-(link: &quot;Helsinki Vantaa Airport, Helsinki Finland (HEL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1124)(goto: &#39;HEL&#39;)]
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 150)(goto: &#39;LHR&#39;)]
+(link: &quot;Chek Lap Kok International Airport (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5973)(goto: &#39;HKG&#39;)] &lt;span class=&#39;small&#39;&gt;Hong Kong, Hong Kong&lt;/span&gt;
+(link: &quot;Charles de Gaulle International Airport (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 365)(goto: &#39;CDG&#39;)] &lt;span class=&#39;small&#39;&gt;Paris, France&lt;/span&gt;
+(link: &quot;Atatürk International Airport (IST)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1671)(goto: &#39;IST&#39;)] &lt;span class=&#39;small&#39;&gt;Istanbul, Turkey&lt;/span&gt;
+(link: &quot;Malta International Airport (MLA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1454)(goto: &#39;MLA&#39;)] &lt;span class=&#39;small&#39;&gt;Malta, Malta&lt;/span&gt;
+(link: &quot;Amsterdam Airport Schiphol (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 302)(goto: &#39;AMS&#39;)] &lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands&lt;/span&gt;
+(link: &quot;Frankfurt am Main International Airport (FRA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 516)(goto: &#39;FRA&#39;)] &lt;span class=&#39;small&#39;&gt;Frankfurt, Germany&lt;/span&gt;
+(link: &quot;Orlando International Airport (MCO)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4225)(goto: &#39;MCO&#39;)] &lt;span class=&#39;small&#39;&gt;Orlando, United States&lt;/span&gt;
+(link: &quot;Chicago O&#39;Hare International Airport (ORD)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3813)(goto: &#39;ORD&#39;)] &lt;span class=&#39;small&#39;&gt;Chicago, United States&lt;/span&gt;
+(link: &quot;Gibraltar Airport (GIB)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1197)(goto: &#39;GIB&#39;)] &lt;span class=&#39;small&#39;&gt;Gibraltar, Gibraltar&lt;/span&gt;
+(link: &quot;Helsinki Vantaa Airport (HEL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1124)(goto: &#39;HEL&#39;)] &lt;span class=&#39;small&#39;&gt;Helsinki, Finland&lt;/span&gt;
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 150)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="3" name="DPS" tags="" position="100,100" size="100,100">
-Flights from Ngurah Rai (Bali) International Airport, Denpasar Indonesia (DPS)
+Flights from Ngurah Rai (Bali) International Airport
+&lt;span class=&#39;small&#39;&gt;Denpasar, Indonesia (DPS)&lt;/span&gt;
 
-(link: &quot;Chek Lap Kok International Airport, Hong Kong Hong Kong (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2146)(goto: &#39;HKG&#39;)]
+(link: &quot;Chek Lap Kok International Airport (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2146)(goto: &#39;HKG&#39;)] &lt;span class=&#39;small&#39;&gt;Hong Kong, Hong Kong&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="4" name="CDG" tags="" position="150,150" size="100,100">
-Flights from Charles de Gaulle International Airport, Paris France (CDG)
+Flights from Charles de Gaulle International Airport
+&lt;span class=&#39;small&#39;&gt;Paris, France (CDG)&lt;/span&gt;
 
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 365)(goto: &#39;MAN&#39;)]
-(link: &quot;Leeds Bradford Airport, Leeds United Kingdom (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 380)(goto: &#39;LBA&#39;)]
-(link: &quot;Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 247)(goto: &#39;AMS&#39;)]
-(link: &quot;Tokyo Haneda International Airport, Tokyo Japan (HND)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 6028)(goto: &#39;HND&#39;)]
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 365)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Leeds Bradford Airport (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 380)(goto: &#39;LBA&#39;)] &lt;span class=&#39;small&#39;&gt;Leeds, United Kingdom&lt;/span&gt;
+(link: &quot;Amsterdam Airport Schiphol (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 247)(goto: &#39;AMS&#39;)] &lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands&lt;/span&gt;
+(link: &quot;Tokyo Haneda International Airport (HND)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 6028)(goto: &#39;HND&#39;)] &lt;span class=&#39;small&#39;&gt;Tokyo, Japan&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="5" name="AMS" tags="" position="200,200" size="100,100">
-Flights from Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)
+Flights from Amsterdam Airport Schiphol
+&lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands (AMS)&lt;/span&gt;
 
-(link: &quot;Leeds Bradford Airport, Leeds United Kingdom (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 287)(goto: &#39;LBA&#39;)]
-(link: &quot;Beijing Capital International Airport, Beijing China (PEK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4860)(goto: &#39;PEK&#39;)]
-(link: &quot;Boryspil International Airport, Kiev Ukraine (KBP)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1129)(goto: &#39;KBP&#39;)]
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 302)(goto: &#39;MAN&#39;)]
-(link: &quot;Charles de Gaulle International Airport, Paris France (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 247)(goto: &#39;CDG&#39;)]
-(link: &quot;Guangzhou Baiyun International Airport, Guangzhou China (CAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5675)(goto: &#39;CAN&#39;)]
-(link: &quot;Abu Dhabi International Airport, Abu Dhabi United Arab Emirates (AUH)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3224)(goto: &#39;AUH&#39;)]
-(link: &quot;Warsaw Chopin Airport, Warsaw Poland (WAW)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 683)(goto: &#39;WAW&#39;)]
+(link: &quot;Leeds Bradford Airport (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 287)(goto: &#39;LBA&#39;)] &lt;span class=&#39;small&#39;&gt;Leeds, United Kingdom&lt;/span&gt;
+(link: &quot;Beijing Capital International Airport (PEK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4860)(goto: &#39;PEK&#39;)] &lt;span class=&#39;small&#39;&gt;Beijing, China&lt;/span&gt;
+(link: &quot;Boryspil International Airport (KBP)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1129)(goto: &#39;KBP&#39;)] &lt;span class=&#39;small&#39;&gt;Kiev, Ukraine&lt;/span&gt;
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 302)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Charles de Gaulle International Airport (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 247)(goto: &#39;CDG&#39;)] &lt;span class=&#39;small&#39;&gt;Paris, France&lt;/span&gt;
+(link: &quot;Guangzhou Baiyun International Airport (CAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5675)(goto: &#39;CAN&#39;)] &lt;span class=&#39;small&#39;&gt;Guangzhou, China&lt;/span&gt;
+(link: &quot;Abu Dhabi International Airport (AUH)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3224)(goto: &#39;AUH&#39;)] &lt;span class=&#39;small&#39;&gt;Abu Dhabi, United Arab Emirates&lt;/span&gt;
+(link: &quot;Warsaw Chopin Airport (WAW)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 683)(goto: &#39;WAW&#39;)] &lt;span class=&#39;small&#39;&gt;Warsaw, Poland&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="6" name="LBA" tags="" position="250,250" size="100,100">
-Flights from Leeds Bradford Airport, Leeds United Kingdom (LBA)
+Flights from Leeds Bradford Airport
+&lt;span class=&#39;small&#39;&gt;Leeds, United Kingdom (LBA)&lt;/span&gt;
 
-(link: &quot;Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 287)(goto: &#39;AMS&#39;)]
-(link: &quot;Lanzarote Airport, Arrecife Spain (ACE)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1822)(goto: &#39;ACE&#39;)]
-(link: &quot;Charles de Gaulle International Airport, Paris France (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 380)(goto: &#39;CDG&#39;)]
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 172)(goto: &#39;LHR&#39;)]
-(link: &quot;Aberdeen Dyce Airport, Aberdeen United Kingdom (ABZ)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 231)(goto: &#39;ABZ&#39;)]
+(link: &quot;Amsterdam Airport Schiphol (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 287)(goto: &#39;AMS&#39;)] &lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands&lt;/span&gt;
+(link: &quot;Lanzarote Airport (ACE)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1822)(goto: &#39;ACE&#39;)] &lt;span class=&#39;small&#39;&gt;Arrecife, Spain&lt;/span&gt;
+(link: &quot;Charles de Gaulle International Airport (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 380)(goto: &#39;CDG&#39;)] &lt;span class=&#39;small&#39;&gt;Paris, France&lt;/span&gt;
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 172)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
+(link: &quot;Aberdeen Dyce Airport (ABZ)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 231)(goto: &#39;ABZ&#39;)] &lt;span class=&#39;small&#39;&gt;Aberdeen, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="7" name="PEK" tags="" position="300,300" size="100,100">
-Flights from Beijing Capital International Airport, Beijing China (PEK)
+Flights from Beijing Capital International Airport
+&lt;span class=&#39;small&#39;&gt;Beijing, China (PEK)&lt;/span&gt;
 
-(link: &quot;Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4860)(goto: &#39;AMS&#39;)]
-(link: &quot;Chek Lap Kok International Airport, Hong Kong Hong Kong (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1237)(goto: &#39;HKG&#39;)]
-(link: &quot;Gimpo International Airport, Seoul South Korea (GMP)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 575)(goto: &#39;GMP&#39;)]
+(link: &quot;Amsterdam Airport Schiphol (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4860)(goto: &#39;AMS&#39;)] &lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands&lt;/span&gt;
+(link: &quot;Chek Lap Kok International Airport (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1237)(goto: &#39;HKG&#39;)] &lt;span class=&#39;small&#39;&gt;Hong Kong, Hong Kong&lt;/span&gt;
+(link: &quot;Gimpo International Airport (GMP)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 575)(goto: &#39;GMP&#39;)] &lt;span class=&#39;small&#39;&gt;Seoul, South Korea&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="8" name="KBP" tags="" position="350,350" size="100,100">
-Flights from Boryspil International Airport, Kiev Ukraine (KBP)
+Flights from Boryspil International Airport
+&lt;span class=&#39;small&#39;&gt;Kiev, Ukraine (KBP)&lt;/span&gt;
 
-(link: &quot;Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1129)(goto: &#39;AMS&#39;)]
+(link: &quot;Amsterdam Airport Schiphol (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1129)(goto: &#39;AMS&#39;)] &lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="9" name="IST" tags="" position="400,400" size="100,100">
-Flights from Atatürk International Airport, Istanbul Turkey (IST)
+Flights from Atatürk International Airport
+&lt;span class=&#39;small&#39;&gt;Istanbul, Turkey (IST)&lt;/span&gt;
 
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1671)(goto: &#39;MAN&#39;)]
-(link: &quot;Singapore Changi Airport, Singapore Singapore (SIN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5383)(goto: &#39;SIN&#39;)]
-(link: &quot;Diyarbakir Airport, Diyabakir Turkey (DIY)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 642)(goto: &#39;DIY&#39;)]
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1671)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Singapore Changi Airport (SIN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5383)(goto: &#39;SIN&#39;)] &lt;span class=&#39;small&#39;&gt;Singapore, Singapore&lt;/span&gt;
+(link: &quot;Diyarbakir Airport (DIY)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 642)(goto: &#39;DIY&#39;)] &lt;span class=&#39;small&#39;&gt;Diyabakir, Turkey&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="10" name="SIN" tags="" position="450,450" size="100,100">
-Flights from Singapore Changi Airport, Singapore Singapore (SIN)
+Flights from Singapore Changi Airport
+&lt;span class=&#39;small&#39;&gt;Singapore, Singapore (SIN)&lt;/span&gt;
 
-(link: &quot;Atatürk International Airport, Istanbul Turkey (IST)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5383)(goto: &#39;IST&#39;)]
-(link: &quot;Kuala Lumpur International Airport, Kuala Lumpur Malaysia (KUL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 184)(goto: &#39;KUL&#39;)]
+(link: &quot;Atatürk International Airport (IST)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5383)(goto: &#39;IST&#39;)] &lt;span class=&#39;small&#39;&gt;Istanbul, Turkey&lt;/span&gt;
+(link: &quot;Kuala Lumpur International Airport (KUL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 184)(goto: &#39;KUL&#39;)] &lt;span class=&#39;small&#39;&gt;Kuala Lumpur, Malaysia&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="11" name="MLA" tags="" position="500,500" size="100,100">
-Flights from Malta International Airport, Malta Malta (MLA)
+Flights from Malta International Airport
+&lt;span class=&#39;small&#39;&gt;Malta, Malta (MLA)&lt;/span&gt;
 
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1454)(goto: &#39;MAN&#39;)]
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1454)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="12" name="ACE" tags="" position="550,550" size="100,100">
-Flights from Lanzarote Airport, Arrecife Spain (ACE)
+Flights from Lanzarote Airport
+&lt;span class=&#39;small&#39;&gt;Arrecife, Spain (ACE)&lt;/span&gt;
 
-(link: &quot;Leeds Bradford Airport, Leeds United Kingdom (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1822)(goto: &#39;LBA&#39;)]
+(link: &quot;Leeds Bradford Airport (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1822)(goto: &#39;LBA&#39;)] &lt;span class=&#39;small&#39;&gt;Leeds, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="13" name="FRA" tags="" position="600,600" size="100,100">
-Flights from Frankfurt am Main International Airport, Frankfurt Germany (FRA)
+Flights from Frankfurt am Main International Airport
+&lt;span class=&#39;small&#39;&gt;Frankfurt, Germany (FRA)&lt;/span&gt;
 
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 516)(goto: &#39;MAN&#39;)]
-(link: &quot;Ljubljana Jože Pučnik Airport, Ljubljana Slovenia (LJU)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 378)(goto: &#39;LJU&#39;)]
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 516)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Ljubljana Jože Pučnik Airport (LJU)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 378)(goto: &#39;LJU&#39;)] &lt;span class=&#39;small&#39;&gt;Ljubljana, Slovenia&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="14" name="PRN" tags="" position="650,650" size="100,100">
-Flights from Priština International Airport, Pristina Serbia (PRN)
+Flights from Priština International Airport
+&lt;span class=&#39;small&#39;&gt;Pristina, Serbia (PRN)&lt;/span&gt;
 
-(link: &quot;Frankfurt am Main International Airport, Frankfurt Germany (FRA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 785)(goto: &#39;FRA&#39;)]
+(link: &quot;Frankfurt am Main International Airport (FRA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 785)(goto: &#39;FRA&#39;)] &lt;span class=&#39;small&#39;&gt;Frankfurt, Germany&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="15" name="LJU" tags="" position="700,700" size="100,100">
-Flights from Ljubljana Jože Pučnik Airport, Ljubljana Slovenia (LJU)
+Flights from Ljubljana Jože Pučnik Airport
+&lt;span class=&#39;small&#39;&gt;Ljubljana, Slovenia (LJU)&lt;/span&gt;
 
 
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="16" name="HEL" tags="" position="750,750" size="100,100">
-Flights from Helsinki Vantaa Airport, Helsinki Finland (HEL)
+Flights from Helsinki Vantaa Airport
+&lt;span class=&#39;small&#39;&gt;Helsinki, Finland (HEL)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1147)(goto: &#39;LHR&#39;)]
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1124)(goto: &#39;MAN&#39;)]
-(link: &quot;Vilnius International Airport, Vilnius Lithuania (VNO)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 392)(goto: &#39;VNO&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1147)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1124)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Vilnius International Airport (VNO)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 392)(goto: &#39;VNO&#39;)] &lt;span class=&#39;small&#39;&gt;Vilnius, Lithuania&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="17" name="LHR" tags="" position="800,800" size="100,100">
-Flights from London Heathrow Airport, London United Kingdom (LHR)
+Flights from London Heathrow Airport
+&lt;span class=&#39;small&#39;&gt;London, United Kingdom (LHR)&lt;/span&gt;
 
-(link: &quot;Helsinki Vantaa Airport, Helsinki Finland (HEL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1147)(goto: &#39;HEL&#39;)]
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 150)(goto: &#39;MAN&#39;)]
-(link: &quot;Beijing Capital International Airport, Beijing China (PEK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5062)(goto: &#39;PEK&#39;)]
-(link: &quot;Leeds Bradford Airport, Leeds United Kingdom (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 172)(goto: &#39;LBA&#39;)]
-(link: &quot;Charlotte Douglas International Airport, Charlotte United States (CLT)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3980)(goto: &#39;CLT&#39;)]
-(link: &quot;Stockholm-Arlanda Airport, Stockholm Sweden (ARN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 907)(goto: &#39;ARN&#39;)]
-(link: &quot;Nice-Côte d&#39;Azur Airport, Nice France (NCE)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 646)(goto: &#39;NCE&#39;)]
-(link: &quot;Henri Coandă International Airport, Bucharest Romania (OTP)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1307)(goto: &#39;OTP&#39;)]
-(link: &quot;Gothenburg-Landvetter Airport, Gothenborg Sweden (GOT)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 663)(goto: &#39;GOT&#39;)]
-(link: &quot;Václav Havel Airport Prague, Prague Czech Republic (PRG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 648)(goto: &#39;PRG&#39;)]
-(link: &quot;Singapore Changi Airport, Singapore Singapore (SIN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 6758)(goto: &#39;SIN&#39;)]
-(link: &quot;Stavanger Airport Sola, Stavanger Norway (SVG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 564)(goto: &#39;SVG&#39;)]
-(link: &quot;Lester B. Pearson International Airport, Toronto Canada (YYZ)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3544)(goto: &#39;YYZ&#39;)]
+(link: &quot;Helsinki Vantaa Airport (HEL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1147)(goto: &#39;HEL&#39;)] &lt;span class=&#39;small&#39;&gt;Helsinki, Finland&lt;/span&gt;
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 150)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Beijing Capital International Airport (PEK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5062)(goto: &#39;PEK&#39;)] &lt;span class=&#39;small&#39;&gt;Beijing, China&lt;/span&gt;
+(link: &quot;Leeds Bradford Airport (LBA)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 172)(goto: &#39;LBA&#39;)] &lt;span class=&#39;small&#39;&gt;Leeds, United Kingdom&lt;/span&gt;
+(link: &quot;Charlotte Douglas International Airport (CLT)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3980)(goto: &#39;CLT&#39;)] &lt;span class=&#39;small&#39;&gt;Charlotte, United States&lt;/span&gt;
+(link: &quot;Stockholm-Arlanda Airport (ARN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 907)(goto: &#39;ARN&#39;)] &lt;span class=&#39;small&#39;&gt;Stockholm, Sweden&lt;/span&gt;
+(link: &quot;Nice-Côte d&#39;Azur Airport (NCE)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 646)(goto: &#39;NCE&#39;)] &lt;span class=&#39;small&#39;&gt;Nice, France&lt;/span&gt;
+(link: &quot;Henri Coandă International Airport (OTP)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1307)(goto: &#39;OTP&#39;)] &lt;span class=&#39;small&#39;&gt;Bucharest, Romania&lt;/span&gt;
+(link: &quot;Gothenburg-Landvetter Airport (GOT)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 663)(goto: &#39;GOT&#39;)] &lt;span class=&#39;small&#39;&gt;Gothenborg, Sweden&lt;/span&gt;
+(link: &quot;Václav Havel Airport Prague (PRG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 648)(goto: &#39;PRG&#39;)] &lt;span class=&#39;small&#39;&gt;Prague, Czech Republic&lt;/span&gt;
+(link: &quot;Singapore Changi Airport (SIN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 6758)(goto: &#39;SIN&#39;)] &lt;span class=&#39;small&#39;&gt;Singapore, Singapore&lt;/span&gt;
+(link: &quot;Stavanger Airport Sola (SVG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 564)(goto: &#39;SVG&#39;)] &lt;span class=&#39;small&#39;&gt;Stavanger, Norway&lt;/span&gt;
+(link: &quot;Lester B. Pearson International Airport (YYZ)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3544)(goto: &#39;YYZ&#39;)] &lt;span class=&#39;small&#39;&gt;Toronto, Canada&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="18" name="HND" tags="" position="850,850" size="100,100">
-Flights from Tokyo Haneda International Airport, Tokyo Japan (HND)
+Flights from Tokyo Haneda International Airport
+&lt;span class=&#39;small&#39;&gt;Tokyo, Japan (HND)&lt;/span&gt;
 
-(link: &quot;Charles de Gaulle International Airport, Paris France (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 6028)(goto: &#39;CDG&#39;)]
+(link: &quot;Charles de Gaulle International Airport (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 6028)(goto: &#39;CDG&#39;)] &lt;span class=&#39;small&#39;&gt;Paris, France&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="19" name="MCO" tags="" position="900,900" size="100,100">
-Flights from Orlando International Airport, Orlando United States (MCO)
+Flights from Orlando International Airport
+&lt;span class=&#39;small&#39;&gt;Orlando, United States (MCO)&lt;/span&gt;
 
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4225)(goto: &#39;MAN&#39;)]
-(link: &quot;Charlotte Douglas International Airport, Charlotte United States (CLT)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 468)(goto: &#39;CLT&#39;)]
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 4225)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
+(link: &quot;Charlotte Douglas International Airport (CLT)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 468)(goto: &#39;CLT&#39;)] &lt;span class=&#39;small&#39;&gt;Charlotte, United States&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="20" name="CAN" tags="" position="950,950" size="100,100">
-Flights from Guangzhou Baiyun International Airport, Guangzhou China (CAN)
+Flights from Guangzhou Baiyun International Airport
+&lt;span class=&#39;small&#39;&gt;Guangzhou, China (CAN)&lt;/span&gt;
 
-(link: &quot;Charles de Gaulle International Airport, Paris France (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5872)(goto: &#39;CDG&#39;)]
-(link: &quot;Suvarnabhumi Airport, Bangkok Thailand (BKK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1059)(goto: &#39;BKK&#39;)]
+(link: &quot;Charles de Gaulle International Airport (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5872)(goto: &#39;CDG&#39;)] &lt;span class=&#39;small&#39;&gt;Paris, France&lt;/span&gt;
+(link: &quot;Suvarnabhumi Airport (BKK)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1059)(goto: &#39;BKK&#39;)] &lt;span class=&#39;small&#39;&gt;Bangkok, Thailand&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="21" name="BKK" tags="" position="1000,1000" size="100,100">
-Flights from Suvarnabhumi Airport, Bangkok Thailand (BKK)
+Flights from Suvarnabhumi Airport
+&lt;span class=&#39;small&#39;&gt;Bangkok, Thailand (BKK)&lt;/span&gt;
 
-(link: &quot;Guangzhou Baiyun International Airport, Guangzhou China (CAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1059)(goto: &#39;CAN&#39;)]
+(link: &quot;Guangzhou Baiyun International Airport (CAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1059)(goto: &#39;CAN&#39;)] &lt;span class=&#39;small&#39;&gt;Guangzhou, China&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="22" name="DIY" tags="" position="1050,1050" size="100,100">
-Flights from Diyarbakir Airport, Diyabakir Turkey (DIY)
+Flights from Diyarbakir Airport
+&lt;span class=&#39;small&#39;&gt;Diyabakir, Turkey (DIY)&lt;/span&gt;
 
-(link: &quot;Atatürk International Airport, Istanbul Turkey (IST)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 642)(goto: &#39;IST&#39;)]
+(link: &quot;Atatürk International Airport (IST)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 642)(goto: &#39;IST&#39;)] &lt;span class=&#39;small&#39;&gt;Istanbul, Turkey&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="23" name="ORD" tags="" position="1100,1100" size="100,100">
-Flights from Chicago O&#39;Hare International Airport, Chicago United States (ORD)
+Flights from Chicago O&#39;Hare International Airport
+&lt;span class=&#39;small&#39;&gt;Chicago, United States (ORD)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3939)(goto: &#39;LHR&#39;)]
-(link: &quot;Los Angeles International Airport, Los Angeles United States (LAX)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1740)(goto: &#39;LAX&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3939)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
+(link: &quot;Los Angeles International Airport (LAX)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1740)(goto: &#39;LAX&#39;)] &lt;span class=&#39;small&#39;&gt;Los Angeles, United States&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="24" name="LAX" tags="" position="1150,1150" size="100,100">
-Flights from Los Angeles International Airport, Los Angeles United States (LAX)
+Flights from Los Angeles International Airport
+&lt;span class=&#39;small&#39;&gt;Los Angeles, United States (LAX)&lt;/span&gt;
 
-(link: &quot;Chicago O&#39;Hare International Airport, Chicago United States (ORD)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1740)(goto: &#39;ORD&#39;)]
+(link: &quot;Chicago O&#39;Hare International Airport (ORD)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1740)(goto: &#39;ORD&#39;)] &lt;span class=&#39;small&#39;&gt;Chicago, United States&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="25" name="ICN" tags="" position="1200,1200" size="100,100">
-Flights from Incheon International Airport, Seoul South Korea (ICN)
+Flights from Incheon International Airport
+&lt;span class=&#39;small&#39;&gt;Seoul, South Korea (ICN)&lt;/span&gt;
 
-(link: &quot;Charles de Gaulle International Airport, Paris France (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5543)(goto: &#39;CDG&#39;)]
+(link: &quot;Charles de Gaulle International Airport (CDG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 5543)(goto: &#39;CDG&#39;)] &lt;span class=&#39;small&#39;&gt;Paris, France&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="26" name="GMP" tags="" position="1250,1250" size="100,100">
-Flights from Gimpo International Airport, Seoul South Korea (GMP)
+Flights from Gimpo International Airport
+&lt;span class=&#39;small&#39;&gt;Seoul, South Korea (GMP)&lt;/span&gt;
 
 
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="27" name="AUH" tags="" position="1300,1300" size="100,100">
-Flights from Abu Dhabi International Airport, Abu Dhabi United Arab Emirates (AUH)
+Flights from Abu Dhabi International Airport
+&lt;span class=&#39;small&#39;&gt;Abu Dhabi, United Arab Emirates (AUH)&lt;/span&gt;
 
-(link: &quot;Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3224)(goto: &#39;AMS&#39;)]
-(link: &quot;Astana International Airport, Tselinograd Kazakhstan (TSE)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2041)(goto: &#39;TSE&#39;)]
+(link: &quot;Amsterdam Airport Schiphol (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3224)(goto: &#39;AMS&#39;)] &lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands&lt;/span&gt;
+(link: &quot;Astana International Airport (TSE)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2041)(goto: &#39;TSE&#39;)] &lt;span class=&#39;small&#39;&gt;Tselinograd, Kazakhstan&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="28" name="TSE" tags="" position="1350,1350" size="100,100">
-Flights from Astana International Airport, Tselinograd Kazakhstan (TSE)
+Flights from Astana International Airport
+&lt;span class=&#39;small&#39;&gt;Tselinograd, Kazakhstan (TSE)&lt;/span&gt;
 
-(link: &quot;Abu Dhabi International Airport, Abu Dhabi United Arab Emirates (AUH)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2041)(goto: &#39;AUH&#39;)]
+(link: &quot;Abu Dhabi International Airport (AUH)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 2041)(goto: &#39;AUH&#39;)] &lt;span class=&#39;small&#39;&gt;Abu Dhabi, United Arab Emirates&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="29" name="CLT" tags="" position="1400,1400" size="100,100">
-Flights from Charlotte Douglas International Airport, Charlotte United States (CLT)
+Flights from Charlotte Douglas International Airport
+&lt;span class=&#39;small&#39;&gt;Charlotte, United States (CLT)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3980)(goto: &#39;LHR&#39;)]
-(link: &quot;Orlando International Airport, Orlando United States (MCO)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 468)(goto: &#39;MCO&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3980)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
+(link: &quot;Orlando International Airport (MCO)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 468)(goto: &#39;MCO&#39;)] &lt;span class=&#39;small&#39;&gt;Orlando, United States&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="30" name="ABZ" tags="" position="1450,1450" size="100,100">
-Flights from Aberdeen Dyce Airport, Aberdeen United Kingdom (ABZ)
+Flights from Aberdeen Dyce Airport
+&lt;span class=&#39;small&#39;&gt;Aberdeen, United Kingdom (ABZ)&lt;/span&gt;
 
 
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="31" name="ARN" tags="" position="1500,1500" size="100,100">
-Flights from Stockholm-Arlanda Airport, Stockholm Sweden (ARN)
+Flights from Stockholm-Arlanda Airport
+&lt;span class=&#39;small&#39;&gt;Stockholm, Sweden (ARN)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 907)(goto: &#39;LHR&#39;)]
-(link: &quot;Mariehamn Airport, Mariehamn Finland (MHQ)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 75)(goto: &#39;MHQ&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 907)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
+(link: &quot;Mariehamn Airport (MHQ)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 75)(goto: &#39;MHQ&#39;)] &lt;span class=&#39;small&#39;&gt;Mariehamn, Finland&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="32" name="MHQ" tags="" position="1550,1550" size="100,100">
-Flights from Mariehamn Airport, Mariehamn Finland (MHQ)
+Flights from Mariehamn Airport
+&lt;span class=&#39;small&#39;&gt;Mariehamn, Finland (MHQ)&lt;/span&gt;
 
-(link: &quot;Stockholm-Arlanda Airport, Stockholm Sweden (ARN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 75)(goto: &#39;ARN&#39;)]
+(link: &quot;Stockholm-Arlanda Airport (ARN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 75)(goto: &#39;ARN&#39;)] &lt;span class=&#39;small&#39;&gt;Stockholm, Sweden&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="33" name="NCE" tags="" position="1600,1600" size="100,100">
-Flights from Nice-Côte d&#39;Azur Airport, Nice France (NCE)
+Flights from Nice-Côte d&#39;Azur Airport
+&lt;span class=&#39;small&#39;&gt;Nice, France (NCE)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 646)(goto: &#39;LHR&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 646)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="34" name="OTP" tags="" position="1650,1650" size="100,100">
-Flights from Henri Coandă International Airport, Bucharest Romania (OTP)
+Flights from Henri Coandă International Airport
+&lt;span class=&#39;small&#39;&gt;Bucharest, Romania (OTP)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1307)(goto: &#39;LHR&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1307)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="35" name="WAW" tags="" position="1700,1700" size="100,100">
-Flights from Warsaw Chopin Airport, Warsaw Poland (WAW)
+Flights from Warsaw Chopin Airport
+&lt;span class=&#39;small&#39;&gt;Warsaw, Poland (WAW)&lt;/span&gt;
 
-(link: &quot;Amsterdam Airport Schiphol, Amsterdam Netherlands (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 683)(goto: &#39;AMS&#39;)]
+(link: &quot;Amsterdam Airport Schiphol (AMS)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 683)(goto: &#39;AMS&#39;)] &lt;span class=&#39;small&#39;&gt;Amsterdam, Netherlands&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="36" name="GIB" tags="" position="1750,1750" size="100,100">
-Flights from Gibraltar Airport, Gibraltar Gibraltar (GIB)
+Flights from Gibraltar Airport
+&lt;span class=&#39;small&#39;&gt;Gibraltar, Gibraltar (GIB)&lt;/span&gt;
 
-(link: &quot;Manchester Airport, Manchester United Kingdom (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1197)(goto: &#39;MAN&#39;)]
+(link: &quot;Manchester Airport (MAN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 1197)(goto: &#39;MAN&#39;)] &lt;span class=&#39;small&#39;&gt;Manchester, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="37" name="GOT" tags="" position="1800,1800" size="100,100">
-Flights from Gothenburg-Landvetter Airport, Gothenborg Sweden (GOT)
+Flights from Gothenburg-Landvetter Airport
+&lt;span class=&#39;small&#39;&gt;Gothenborg, Sweden (GOT)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 663)(goto: &#39;LHR&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 663)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="38" name="PRG" tags="" position="1850,1850" size="100,100">
-Flights from Václav Havel Airport Prague, Prague Czech Republic (PRG)
+Flights from Václav Havel Airport Prague
+&lt;span class=&#39;small&#39;&gt;Prague, Czech Republic (PRG)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 648)(goto: &#39;LHR&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 648)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="39" name="SGN" tags="" position="1900,1900" size="100,100">
-Flights from Tan Son Nhat International Airport, Ho Chi Minh City Vietnam (SGN)
+Flights from Tan Son Nhat International Airport
+&lt;span class=&#39;small&#39;&gt;Ho Chi Minh City, Vietnam (SGN)&lt;/span&gt;
 
-(link: &quot;Chek Lap Kok International Airport, Hong Kong Hong Kong (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 927)(goto: &#39;HKG&#39;)]
+(link: &quot;Chek Lap Kok International Airport (HKG)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 927)(goto: &#39;HKG&#39;)] &lt;span class=&#39;small&#39;&gt;Hong Kong, Hong Kong&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="40" name="KUL" tags="" position="1950,1950" size="100,100">
-Flights from Kuala Lumpur International Airport, Kuala Lumpur Malaysia (KUL)
+Flights from Kuala Lumpur International Airport
+&lt;span class=&#39;small&#39;&gt;Kuala Lumpur, Malaysia (KUL)&lt;/span&gt;
 
-(link: &quot;Tan Son Nhat International Airport, Ho Chi Minh City Vietnam (SGN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 652)(goto: &#39;SGN&#39;)]
+(link: &quot;Tan Son Nhat International Airport (SGN)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 652)(goto: &#39;SGN&#39;)] &lt;span class=&#39;small&#39;&gt;Ho Chi Minh City, Vietnam&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="41" name="TLL" tags="" position="2000,2000" size="100,100">
-Flights from Lennart Meri Tallinn Airport, Tallinn-ulemiste International Estonia (TLL)
+Flights from Lennart Meri Tallinn Airport
+&lt;span class=&#39;small&#39;&gt;Tallinn-ulemiste International, Estonia (TLL)&lt;/span&gt;
 
-(link: &quot;Helsinki Vantaa Airport, Helsinki Finland (HEL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 62)(goto: &#39;HEL&#39;)]
+(link: &quot;Helsinki Vantaa Airport (HEL)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 62)(goto: &#39;HEL&#39;)] &lt;span class=&#39;small&#39;&gt;Helsinki, Finland&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="42" name="VNO" tags="" position="2050,2050" size="100,100">
-Flights from Vilnius International Airport, Vilnius Lithuania (VNO)
+Flights from Vilnius International Airport
+&lt;span class=&#39;small&#39;&gt;Vilnius, Lithuania (VNO)&lt;/span&gt;
 
 
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="43" name="SVG" tags="" position="2100,2100" size="100,100">
-Flights from Stavanger Airport Sola, Stavanger Norway (SVG)
+Flights from Stavanger Airport Sola
+&lt;span class=&#39;small&#39;&gt;Stavanger, Norway (SVG)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 564)(goto: &#39;LHR&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 564)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="44" name="JFK" tags="" position="2150,2150" size="100,100">
-Flights from John F Kennedy International Airport, New York United States (JFK)
+Flights from John F Kennedy International Airport
+&lt;span class=&#39;small&#39;&gt;New York, United States (JFK)&lt;/span&gt;
 
-(link: &quot;London Heathrow Airport, London United Kingdom (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3440)(goto: &#39;LHR&#39;)]
+(link: &quot;London Heathrow Airport (LHR)&quot;)[(set: $visited to $visited + 1)(set: $distance to $distance + 3440)(goto: &#39;LHR&#39;)] &lt;span class=&#39;small&#39;&gt;London, United Kingdom&lt;/span&gt;
 
 You have taken $visited flights and traveled $distance miles
 </tw-passagedata><tw-passagedata pid="45" name="YYZ" tags="" position="2200,2200" size="100,100">
-Flights from Lester B. Pearson International Airport, Toronto Canada (YYZ)
+Flights from Lester B. Pearson International Airport
+&lt;span class=&#39;small&#39;&gt;Toronto, Canada (YYZ)&lt;/span&gt;
 
 
 
