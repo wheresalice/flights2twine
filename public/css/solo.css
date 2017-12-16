@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+html {
+    font: 16px/1.5 Inconsolata, sans-serif;
+}
+
+@media (min-width: 30rem) {
+    html {
+        font-size: 20px;
+    }
+}
+
+body {
+    margin: 2rem 0 5rem;
+    color: #333;
+}
+
+@media (min-width: 30rem) {
+    body {
+        margin-top: 5rem;
+    }
+}
+
+a {
+    color: #0074d9; /* From http://clrs.cc */
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, sans-serif;
+    margin: 0 0 0.5rem -0.1rem /* align left edge */;
+    line-height: 1;
+    color: #111;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 30rem) {
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+h1 a {
+    color: inherit;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 30rem) {
+    h2 {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+p, ul, ol, dl, table, pre, blockquote {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+li {
+    background: #FFDC00;
+}
+li.visited0 {
+    background: #FF4136;
+}
+
+li.visited1 {
+    background: #01FF70;
+}
+
+h2 a {
+    color: #111;
+}
+
+div.count {
+    background: #7FDBFF;
+    margin-bottom: 2rem;
+}

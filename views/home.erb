@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenFlights to Twine Generator</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/solo.css">
+</head>
+<body>
+<div class="container">
+  <h1>OpenFlights to Twine generator</h1>
+  <p>This site will take a CSV backup file from <a href="https://openflights.org/">OpenFlights.org</a> and turn it into a <a href="http://twinery.org/">Twine</a> story.</p>
+  <p>From OpenFlights once you are logged in you should be able to go to the settings page and then export your data.  Upload it here and you will get a download of a Twine story.  You can then use the Import from File option in Twine to import this file.</p>
+  <form action="/generate" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit">
+  </form>
+</div>
+</body>
+</html>
