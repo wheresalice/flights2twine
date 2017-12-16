@@ -8,6 +8,7 @@ There is an example story which uses Alice's flight data.
 
 Here is what you should be aware of:
 
+* The airport data comes from OpenFlights
 * The IFID should be changed if you plan on publishing your story
 * If there are no flights out of an airport your readers will get stuck there (unless they use the back button)
 
