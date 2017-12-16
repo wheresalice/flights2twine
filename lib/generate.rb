@@ -14,7 +14,7 @@ def generate(input_file)
   airport_codes = {}
   airports.each {|airport| airport_codes[airport] = code2airport(airport)}
 
-  routes = flights.map{|flight| {'From' => flight['From'], 'To' => flight['To']}}.uniq
+  routes = flights.map{|flight| {'From' => flight['From'], 'To' => flight['To'], 'Distance' => flight['Distance']}}.uniq
 
   html = <<-EOF
 <tw-storydata name="Open Flights" startnode="1" creator="Twine" creator-version="2.1.3" ifid="DC223103-5C2D-4D5B-9A3C-2CF548DBB8FF" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
@@ -23,13 +23,14 @@ def generate(input_file)
   EOF
 
   airports.each_with_index do |airport, index|
-    destinations = routes.select{|route| route['From'] == airport}.map{|route| "<li>[[#{airport_codes[route['To']]} (#{route['To']})->#{route['To']}]]</li>"}.join("\n")
+    destinations = routes.select{|route| route['From'] == airport}.map{|route| "<li>(link: \"#{airport_codes[route['To']]} (#{route['To']})\")[(set: $visited to $visited + 1)(set: $distance to $distance + #{route['Distance']})(goto: '#{route['To']}')]"}.join("\n")
     html << <<-EOF
 <tw-passagedata pid="#{index+1}" name="#{airport}" tags="" position="#{index*50}, #{index*50}">
 Flights from #{airport_codes[airport]} (#{airport})
 <ul>
 #{destinations}
 </ul>
+You have taken $visited flights and traveled $distance miles
 </tw-passagedata>
     EOF
   end
