@@ -13,7 +13,8 @@
   <p>This site will take a CSV backup file from <a href="https://openflights.org/">OpenFlights.org</a> and turn it into a <a href="http://twinery.org/">Twine</a> story.</p>
   <p>From OpenFlights once you are logged in you should be able to go to the settings page and then export your data.  Upload it here and you will get a download of a Twine story.  You can then use the Import from File option in Twine to import this file.</p>
   <form action="/generate" method="post" enctype="multipart/form-data">
-    <input type="file" name="file">
+    <label for="file">OpenFlights CSV file:</label> <input type="file" name="file" id="file"><br>
+    <label for="home">Home airport:</label> <input type="text" name="home" value="LBA" id="home"><br>
     <input type="submit">
   </form>
   <p><a href="/OpenFlights.html">Example generated story</a> || <a href="https://github.com/WheresAlice/flights2twine">Source</a></p>

@@ -6,15 +6,16 @@ def code2airport(code)
   AIRPORT_DATA.find{|airport| airport[4] == code}
 end
 
-def generate(input_file)
+def generate(input_file, start_node = 'LBA')
 
   flights = CSV.read(input_file, {:headers => true})
   airports = flights.map{|flight| [flight['From'], flight['To']]}.flatten.uniq
 
   routes = flights.map{|flight| {'From' => flight['From'], 'To' => flight['To'], 'Distance' => flight['Distance']}}.uniq
 
+  start_node_index = airports.find_index(start_node.upcase).to_i + 1
   html = <<-EOF
-<tw-storydata name="Open Flights" startnode="1" creator="Twine" creator-version="2.1.3" ifid="DC223103-5C2D-4D5B-9A3C-2CF548DBB8FF" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Open Flights" startnode="#{start_node_index}" creator="Twine" creator-version="2.1.3" ifid="DC223103-5C2D-4D5B-9A3C-2CF548DBB8FF" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 .small {
   font-size: 10px;
