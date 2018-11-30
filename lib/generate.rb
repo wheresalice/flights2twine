@@ -1,4 +1,3 @@
-#encoding: utf-8
 require 'csv'
 
 AIRPORT_DATA = CSV.read(File.join(File.dirname(__FILE__), '..','data','airports.dat'))
